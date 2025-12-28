@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadCare AI | Pothole Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">SmartRoad <span>AI</span></div>
+            <nav>
+                <div class="nav-item active">Dashboard</div>
+                <!-- <div class="nav-item">Map View</div>
+                <div class="nav-item">Reports</div> -->
+                <a href="documentation.html" style="text-decoration: none; color: rgb(218, 205, 205);">
+                    <div class="documentation" style="padding: 20px; border: 1px ssolid black;">Documentation</div>
+                </a>
+                
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Pothole Detection</h1>
+                <div class="status-badge" id="status">System Ready</div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="card">
+                    <h3>Potholes Detected</h3>
+                    <p id="count" class="stat-value">0</p>
+                </div>
+                <!-- <div class="card">
+                    <h3>Severity Level</h3>
+                    <p id="severity" class="stat-value">--</p>
+                </div> -->
+                <div class="card action-card">
+                    <h3>Upload Image</h3>
+                    <input type="file" id="fileInput" hidden>
+                    <button class="btn primary" onclick="document.getElementById('fileInput').click()">Select Image</button>
+                    <button class="btn secondary" id="detectBtn">Run Detection</button>
+                </div>
+            </div>
+
+            <div class="image-display">
+                <div class="display-box">
+                    <h4>Original Feed</h4>
+                    <img id="uploadImg" src="" alt="Waiting for upload...">
+                </div>
+                <div class="display-box">
+                    <h4>AI Analysis</h4>
+                    <img id="resultImg" src="" alt="Result will appear here...">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+path: pothole_dataset
+train: train/images
+val: valid/images
+
+names:
+  0: pothole

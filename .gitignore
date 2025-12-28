@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+yolo_env/
+venv/
+.env/
+
+# YOLO / ML artifacts
+runs/
+uploads/
+*.pt
+
+# Dataset (VERY IMPORTANT)
+pothole_dataset/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+
+# OS / Editor
+.vscode/
+.DS_Store

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoad AI | Documentation</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-road-circle-exclamation"></i>
+        <span>SmartRoad <small>AI</small></span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="documentation.html" class="btn-outline">Documentation</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <header class="hero">
+        <h1>Documentation</h1>
+        <p>Pothole Detection System</p>
+    </header>
+
+    <section class="main-card">
+        <h2>Overview</h2>
+        <p>Road potholes are a major cause of traffic accidents, vehicle damage, and inefficient road maintenance. Existing pothole reporting mechanisms are largely manual, slow, and inconsistent.
+
+This project presents an AI-based pothole detection system that automatically detects potholes from road images using a deep learning object detection model. The system provides visual bounding boxes, pothole count, and confidence information through a simple web interface..</p>
+
+        <h2>Problem Statement</h2>
+        <ul>
+            <li>Manual pothole detection is time-consuming and unreliable.</li>
+            <li>Road conditions vary greatly (lighting, shadows, textures)</li>
+            <li><strong>Real-time Results:</strong> Instant detection with confidence scores and pothole counts.</li>
+            <li>Authorities often react only after damage occurs.</li>
+        </ul>
+
+        <h2>Solution Approach</h2>
+        <p>We use computer vision and deep learning to identify potholes directly from road images.</p>
+        <p>The system: </p>
+        <ol>
+            <li>Accepts a road image from the user</li>
+            <li>Runs an object detection model</li>
+            <li>Identifies potholes</li>
+            <li>Displays results visually on a web interface.</li>
+            <li>The annotated image will be displayed showing detected potholes.</li>
+        </ol>
+
+        <h2>Technical Details</h2>
+        <ul>
+            <li><strong>Machine learning</strong> <strong>Model: </strong> YOLO(You Only Look Once)</li>
+            <li><strong>Task</strong>Object Detection</li>
+            <li><strong>Output</strong>Bounding Box + confidence Scores</p></li>
+        </ul>
+        
+        
+        <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Backend:</strong> FastAPI(python)</p>
+        <p><strong>AI Model:</strong> Convolutional Neural Networks (CNN) for image classification</p>
+        <p><strong>Supported Formats:</strong> JPEG, PNG, and other common image formats</p>
+        <p><strong>Browser Compatibility:</strong> Modern browsers with ES6+ support</p>
+
+        <h2>API Integration</h2>
+        <p>The system can be integrated with backend APIs for batch processing and data storage. Contact the development team for API documentation.</p>
+
+        <h2>How the system works...</h2>
+        <ol>
+            <li>User uploads a road image via the web interface</li>
+            <li>Frontend previews the image</li>
+            <li>On clicking “Detect”, the image is sent to the backend</li>
+            <li>Backend saves the image temporarily</li>
+            <li>YOLO model runs inference on the image</li>
+            <li>Model outputs: Bounding Boxes</li>
+            <li>Annotated image is saved</li>
+            <li>Backend returns: Pothole Counts</li>
+            <li>Frontend displays the final detected image and statistics</li>
+        </ol>
+
+        <h2>Limitations</h2>
+        <ul>
+            <li>Detection accuracy depends on dataset quality</li>
+            <li>Detection accuracy depends on dataset quality</li>
+            <li>No severity classification in current version</li>
+            <li>Image-based detection only for now (video planned for future)</li>
+        </ul>
+
+        <h2>Future Enhancements</h2>
+        <ul>
+            <li>Video-based pothole detection</li>
+            <li>Severity classification (minor / major potholes)</li>
+            <li>GPS-based location tagging</li>
+            <li>Integration with dashcams and mobile apps</li>
+            <li>Integration with dashcams and mobile apps</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>This project demonstrates how deep learning can be effectively used to solve a real-world civic problem. By combining a trained object detection model with a lightweight backend and an intuitive frontend, we provide a practical and scalable pothole detection solution.
+
+The system is designed as a proof of concept, with strong potential for real-world deployment when integrated with additional data sources and infrastructure.</p>
+        
+
+            <h2>About Me</h2>
+            <p>I am a Computer Science Engineering student passionate about building AI-driven solutions for real-world problems. PotholeGuard AI reflects my interest in computer vision and smart infrastructure, combining deep learning with a web-based system to detect and visualize road defects. This project represents my effort to move beyond theory and build deployable, impact-focused AI applications.</p>
+
+
+        <h2>Support</h2>
+        <p>For questions or support, please reach out to the development team.
+            <a href="https://www.linkedin.com/in/sahib-suri/">linkedIn</a>
+        </p>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
